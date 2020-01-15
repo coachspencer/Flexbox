@@ -1,0 +1,21 @@
+.navbar{
+    display: flex;
+    padding: 10px;
+}
+
+.brand, .nav-Link{
+    text-transform: uppercase;
+    color: grey;
+}
+
+.topNav{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topNav .nav-Link{
+    text-decoration: none;
+    padding-left: 20px;
+}
