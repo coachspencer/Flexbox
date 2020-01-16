@@ -4,12 +4,14 @@
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
+    justify-content: space-between;
 }
 
 .brand, .nav-Link{
     text-transform: uppercase;
     color: grey;
     margin-right: auto;
+    font-size: 20px;
 }
 
 .topNav{
@@ -22,4 +24,12 @@
 .topNav .nav-Link{
     text-decoration: none;
     padding-left: 20px;
+}
+
+.brand{
+    font-size: 25px;
+}
+
+.bigd{ color: rgb(130, 0, 0);
+
 }
