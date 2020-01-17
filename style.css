@@ -43,4 +43,37 @@ font-size: 25px;
     padding-left: 20px;
     font-size: 20px;
 }
+.dropdownLink{
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    ul.topnav li.nav-link {
+        display: none;
+    }
+}
+
+ul.topnav.responsive li a.dropdownLink{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+ul.topnav li.dropdownLink {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+ul.topnav.responsive li{
+    position: relative;
+    top: 30px;
+    right: 30px;
+}
+ul.topnav.responsive{
+   flex-direction: column; 
+   text-align: right;
+}
+
+
 
