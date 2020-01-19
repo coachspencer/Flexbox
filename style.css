@@ -18,7 +18,7 @@ html, body {
     justify-content: space-between;
 }
 
-.brand, .nav-link{
+.brand, .nav-link, a{
     text-transform: uppercase;
     color: lightcoral;
 }
@@ -38,26 +38,39 @@ font-size: 25px;
     list-style: none;
 }
 
-.topnav .nav-link{
+.topnav .nav-link, a{
     text-decoration: none;
     padding-left: 20px;
     font-size: 20px;
 }
 .dropdownLink{
+    display: none;
+}
+
+header {
     display: flex;
+    justify-content: center;
+}
+
+.headershot-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.headershot{
+    border-radius: 50%;
+    max-width: 200px;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
-    ul.topnav li.nav-link {
+    ul.topnav li a.nav-link {
         display: none;
     }
 }
 
-ul.topnav.responsive li a.dropdownLink{
-    position: absolute;
-    top: 15px;
-    right: 20px;
-}
 ul.topnav li.dropdownLink {
     display: block;
     position: absolute;
@@ -65,15 +78,29 @@ ul.topnav li.dropdownLink {
     right: 20px;
 }
 
-ul.topnav.responsive li{
+ul.topnav.responsive{
+    text-align: right;
+}
+
+ ul.topnav.responsive li{
     position: relative;
     top: 30px;
     right: 30px;
 }
-ul.topnav.responsive{
-   flex-direction: column; 
-   text-align: right;
+
+ ul.topnav.responsive li a.nav-link{
+     display: block;
+     line-height: 2;
+ }
+
+
+ul.topnav.responsive li.dropdownLink{
+    position: absolute;
+    top: 15px;
+    right: 20px;
 }
+
+
 
 
 
