@@ -1,6 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["RbuFg"]); }
-
-__d("CometRouteParams",["useCurrentRoute"],(function(a,b,c,d,e,f){"use strict";function a(){var a;return(a=(a=b("useCurrentRoute")())==null?void 0:a.params)!=null?a:{}}e.exports={useRouteParams:a}}),null);
-__d("VideoHomeTypedLoggerLite",["Banzai","generateLiteTypedLogger"],(function(a,b,c,d,e,f){"use strict";e.exports=b("generateLiteTypedLogger")("logger:VideoHomeLoggerConfig")}),null);
-__d("XVideoHomeFeedController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/watch/",{comment_id:{type:"FBID"},cursor:{type:"String"},ref:{type:"String"},t:{type:"Int"},v:{type:"String"},external_log_id:{type:"String"},q:{type:"String"}})}),null);
-__d("XVideoHomeShowController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/watch/{?section_id}/",{from:{type:"String"},section_id:{type:"String"},query:{type:"String"},video_id:{type:"String"},upstream_player_source:{type:"Enum",enumType:1},start_timestamp_s:{type:"Int"},autoplay_expanded:{type:"Bool",defaultValue:!1}})}),null);
