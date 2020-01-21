@@ -68,7 +68,8 @@ header {
     width: 100%;
 }
 
-.services{
+.services,
+.contact-container{
     background-color: rgb(202, 212, 218);
     padding: 4rem 1rem;
 
@@ -89,7 +90,8 @@ justify-content: center;
 
 .blurb-wrapper-left,
 .blurb-wrapper-right{
-    flex: 1;
+order: 2;
+padding: 2rem;
 }
 
 .icon-left,
@@ -164,6 +166,30 @@ justify-content: center;
     transform: scale(1.02);
 }
 
+form label{
+    font-size: 14px;
+}
+
+.form-group{
+    margin-bottom: .75rem;
+}
+
+.form-control{
+    max-width: 800px;
+    width: 100%;
+    background-color: whitesmoke;
+    color: #292b2c;
+    border-radius: 2px;
+    border: 1px solid #ced4da;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+    display: block;
+}
+.submit-btn-wrapper{
+    margin-top: 4rem;
+}
 
 @media (max-width: 768px) {
     ul.topnav li a.nav-link {
@@ -201,6 +227,16 @@ ul.topnav.responsive li.dropdownLink{
 }
 .portfolio-wrapper{
     text-align: center;
+}
+
+.media-object{
+    flex-direction: column;
+    text-align: center;
+}
+
+.icon-right,
+.icon-left{
+    order: 1;
 }
 
 @media (max-width:599px) {
